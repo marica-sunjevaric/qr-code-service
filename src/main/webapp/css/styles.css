@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body {
+    display: flex;
+}
+div {
+    padding: 0.2em;
+}
+.options  {
+    padding: 1.5em;
+}
+input, strong {
+    margin: .5em;
+    padding: .1em;
+}
+input[type=color]{
+    width:100%;
+}
+#textUrl,.vCard1, .img-buffer {
+    display: none;
+    padding: 1em;
+}
+#width, #height, #textvCard {
+    display: none;
+}
+.qrcode > img, canvas, svg {
+    outline: 10px solid #e4e4e4;
+}
+.qrcode {
+    padding: 2em;
+}
+#container {
+    max-height: 100%;
+    max-width: 100%;
+}

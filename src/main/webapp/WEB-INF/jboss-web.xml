@@ -1,0 +1,3 @@
+<jboss-web>
+    <context-root>qr-code-service</context-root>
+</jboss-web>
