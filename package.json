@@ -1,0 +1,22 @@
+{
+  "name": "qr-code-app-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jimp": "^1.6.0",
+    "qrcode-reader": "^1.0.4"
+  }
+}
