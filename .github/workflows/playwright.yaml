@@ -25,11 +25,11 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --project ${{ matrix.browser }} --reporter=list
+        run: npx playwright test --project ${{ matrix.browser }} --reporter=list,html
 
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: playwright-report-${{ matrix.browser }}
-          path: playwright-report/
+        name: playwright-report-${{ matrix.browser }}
+        path: playwright-report/${{ matrix.browser }}  
